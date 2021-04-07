@@ -64,6 +64,12 @@ class curve:
         numerator = vector.vector(self.d_one_gamma_equations).cross(vector.vector(self.d_two_gamma_equations))
         denominator = vector.vector(self.d_one_gamma_equations).magnitude()
         return numerator/denominator
+   def rn_to_rm(self):
+        num_rows = self.dim_domain
+        num_cols = self.dim_codomain
+        return (num_rows,num_cols)
+
+   
 """
 COMPUTING ARC-LENGTH
 COMPUTING GRADIENT 
@@ -71,7 +77,7 @@ COMPUTING TORSION
 COMPUTING DERIVATIVE MATRIX 
 
 """
-
+ 
 """
 BOOL :
         (1) Regular 
